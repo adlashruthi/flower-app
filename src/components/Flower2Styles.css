@@ -1,0 +1,35 @@
+.flower-image {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+.flower-image::before {
+  content: "";
+  background: url("https://media.istockphoto.com/id/1358494633/photo/violet-verbena-field-flower-background.jpg?b=1&s=170667a&w=0&k=20&c=GMHX8daeHWH0Ns0iPhfqDEpKreNpC1brB_hwfFxOP7c=");
+  background-size: cover;
+  top: 0;
+  background-position: center top;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.heading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(96, 65, 124);
+}
+.flower-image h1 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .flower-image h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
